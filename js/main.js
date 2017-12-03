@@ -13,11 +13,8 @@ function arrOut(){
 function getIndexElems(){
 	var index = document.getElementById('index').value;
 	var elem = document.getElementById('elem').value;   
-	  
 	   	arr[index] = elem;
 	   	newArr.innerHTML = arr;
-	   
-		
 }
 var button = document.getElementById('button');
 button.addEventListener('click', getIndexElems, false);
@@ -27,7 +24,6 @@ button.addEventListener('click', getIndexElems, false);
 
 
 function getPop(){
-	
 	arr.pop();
 	arrOut();
 }
@@ -39,7 +35,6 @@ pop.addEventListener('click', getPop, false);
 
 
 function getShift(){
-	
 	var elem = document.getElementById('elem').value;  
 	arr.shift(elem);
 	arrOut();
@@ -65,7 +60,6 @@ function getunshift(){
 	arr.unshift(elem);
 	arrOut();
 }
-
 var unshift = document.getElementById('unshift');
 unshift.addEventListener('click', getunshift, false);
 
